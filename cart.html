@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車</title>
+    <style>
+        @import url(index.css);
+        @import url(cart.css);
+    </style>
+    <script src="vue.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="title1"><a href="home.html">Bag. Back. Best.</a></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="left"><a class="bar-detail" href="productList.html">商品</a></li>
+            <li class="right"><a class="bar-detail" href="login.html"><img src="picture/user.png" class="icon"></a></li>
+            <li class="right"><a class="bar-detail"><img src="picture/shopping-cart.png" class="icon"></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="app">
+            <div class="container">
+                <div class="item_header">
+                    <div class="item_detail">商品</div>
+                    <div class="price">單價</div>
+                    <div class="count">數量</div> 
+                    <div class="amount">總計</div>
+                    <div class="operate">操作</div>
+                </div>
+                <div class="item_container" v-for="(item, index) in itemList" :key="item.id" >
+                    <div class="item_header item_body">
+                        <div class="item_detail">
+                            <img v-bind:src="item.imgUrl" alt="">
+                            <div class="name">{{item.itemName}}</div>
+                        </div>
+                            
+                        <div class="price"><span>$</span>{{item.price}}</div>
+                        <div class="count">
+                            <button @click="handleSub(item)">-</button>
+                                {{item.count}}
+                            <button @click="handlePlus(item)">+</button>
+                        </div> 
+                        <div class="amount">{{item.price * item.count}}</div>
+                        <div class="operate">
+                            <button @click="handledelete(index)">刪除</button>
+                        </div>
+                   </div>
+                </div>
+                
+                <table class="checkout">
+                    <tr>
+                        <td>總金額: </td>
+                        <td width="100px"></td>
+                        <td><button><a href="order_1.html" class="nonlink">結帳</a></button></td>
+                    </tr>
+                </table>
+                <!--
+                <div class="checkout">
+                    <div>總金額: </div>
+                    <button><a href="order_1.html">結帳</a></button>
+                </div>
+                -->
+                
+            </div>
+        </div>
+    </main>
+    <script src="product.js"></script>
+</body>
+
+<footer class="footer">
+    <div class="Storename">  Bag. Back. Best.  </div>
+    <div class="Subtitle"> # The best choice for your OOTD </div>
+    <img class="footicon" src="picture/icon.png"></img>
+</footer>
+</html>

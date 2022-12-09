@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品名</title>
+    <style>
+        @import url(index.css);
+        @import url(product.css);
+    </style>
+    <script src="vue.min.js"></script>
+</head>
+<body>
+    <!--頁首-->
+    <header>
+        <h1 id="title1"><a href="home.html">Bag. Back. Best.</a></h1>
+    </header>
+
+    <!--導覽列-->
+    <nav>
+        <ul>
+            <li class="left"><a class="bar-detail" href="productList.html">商品</a></li>
+            <li class="right"><a class="bar-detail" href="login.html"><img src="picture/user.png" class="icon"></a></li>
+            <li class="right"><a class="bar-detail" href="cart.html"><img src="picture/shopping-cart.png" class="icon"></a></li>
+        </ul>
+    </nav>
+
+    <!--主要內容-->
+    <main>
+        <div id="app">
+            <div class="item_container" v-for="(item, index) in itemList" :key="item.id" >
+                <div class="photo">
+                    <table>
+                        <tr>
+                            <td rowspan="0" width="35%"><img v-bind:src="item.imgUrl" alt="" class="img-photo"></td>
+                            <td height="10px"><h3>{{item.itemName}}</h3></th>
+                        </tr>
+                        <tr>
+                            <td>{{item.intro}}</td>
+                        </tr> 
+                        <tr>
+                            <td heght="10px">價格: {{item.price}}</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button @click="handleSub(item)">-</button>
+                                    {{item.count}}
+                                <button @click="handlePlus(item)">+</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><button>加入購物車</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="product.js"></script>
+</body>
+
+<footer class="footer">
+    <div class="Storename">  Bag. Back. Best.  </div>
+    <div class="Subtitle"> # The best choice for your OOTD </div>
+    <img class="footicon" src="picture/icon.png"></img>
+</footer>
+</html>

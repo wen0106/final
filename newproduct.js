@@ -1,0 +1,1 @@
+var bag1=document.getElementById("container1");

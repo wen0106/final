@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bag. Back. Best.</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+      @import url(index.css);
+      @import url(order.css);
+  </style>
+</head>
+<body>
+  
+  <header>
+    <h1 id="title1"><a href="home.html">Bag. Back. Best.</a></h1>
+  </header>
+    
+  <!--導覽列-->
+  <nav>
+    <ul>
+      <li class="left"><a class="bar-detail" href="productList.html">商品</a></li>
+      <li class="right"><a class="bar-detail" href="login.html"><img src="picture/user.png" class="icon"></a></li>
+      <li class="right"><a class="bar-detail" href="cart.html"><img src="picture/shopping-cart.png" class="icon"></a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <!-- 表單區域開始 -->
+    <article class="font-light-green bg-dark-green">
+
+      <div class="title">
+        <h2>發票</h2>
+        <p class="progress">
+          <i class="material-icons">check_circle</i>
+          <i class="material-icons">check_circle</i>
+          <i class="material-icons">radio_button_checked</i>
+        </p>
+      </div>
+
+      <div class="segment font-light-green">
+        <ul>
+          <li><a href="order_3_1.html">電子發票</a></li>
+          <li class="selected"><a href="javascript:;">郵寄發票</a></li>
+        </ul>
+      </div>
+
+      <form>
+
+        <p class="address full">
+
+          <label for="address">地址</label>
+
+          <input type="text" id="city" class="city" placeholder="縣市">          
+          <input type="text" id="county" class="city float-right" placeholder="地區">
+          <input type="text" id="address" placeholder="地址">
+
+          <span class="same-checkbox">
+            <input type="checkbox" name="same-address" id="same-address">
+            <label for="same-address">同運送地址</label>
+          </span>
+
+        </p>
+
+        <p class="full">
+          <label for="company-code">統一編號（選填）</label>
+          <input type="text" id="company-code" placeholder="12345678">
+        </p>
+
+      </form>
+
+      <p class="full button">
+        <a href="order_2.html" class="float-left">上一步</a>
+        <a href="order_success.html">確認結帳</a>
+      </p>
+
+    </article>
+    <!-- 表單區域結束 -->
+
+    <!-- 側邊欄區域開始 -->
+    <aside class="desktop">
+
+      <!-- 訂單摘要區域開始 -->
+      <h3 class="bg-light-green">訂單摘要</h3>
+
+      <div class="summary">
+
+        <p>小計<span>NT$ 2,700</span></p>
+        <p>運費<span>NT$ 300</span></p>
+  
+        <p class="total">總計<span>NT$ 3,000</span></p>
+
+      </div>
+      <!-- 訂單摘要區域結束 -->
+
+    </aside>
+    <!-- 側邊欄區域結束 -->
+
+  </div>
+
+</body>
+
+<footer class="footer">
+  <div class="Storename">  Bag. Back. Best.  </div>
+  <div class="Subtitle"> # The best choice for your OOTD </div>
+  <img class="footicon" src="picture/icon.png"></img>
+</footer>
+</html>

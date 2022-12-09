@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小巧方便小包</title>
+    <style>
+        @import url(index.css);
+        @import url(product.css);
+    </style>
+    <script src="product.js"></script>
+</head>
+<body>
+    <!--頁首-->
+    <header>
+        <h1 id="title1"><a href="home.html">Bag. Back. Best.</a></h1>
+    </header>
+
+    <!--導覽列-->
+    <nav>
+        <ul>
+            <li class="left"><a class="bar-detail" href="productList.html">商品</a></li>
+            <li class="right"><a class="bar-detail" href="login.html"><img src="picture/user.png" class="icon"></a></li>
+            <li class="right"><a class="bar-detail" href="cart.html"><img src="picture/shopping-cart.png" class="icon"></a></li>
+        </ul>
+    </nav>
+
+    <!--主要內容-->
+    <main>
+        <div class="photo">
+            <table>
+                <tr>
+                    <td rowspan="0" width="35%">
+                        <img src="picture/bag1/picture1.JPG" alt="" class="img-photo">
+                    </td>
+                    <td height="10px"><h3>小巧方便小包</h3></th>
+                </tr>
+                <tr>
+                    <td height="280px">
+                        <p>可放手機、錢包、小物化妝品</p>
+                        <p>W15.5*H11*D7/cm</p>
+                    </td>
+                </tr> 
+                <tr>
+                    <td heght="10px">價格: 3000</td>
+                </tr>
+                <tr>
+                    <td>
+                        數量:
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button>加入購物車</button></td> 
+                    <!--<div class="d-flex my-4">
+                        <select name="" class="form-control mr-2" v-model="product.num">
+                                    <option value="0" selected disabled>請選擇商品數量</option>
+                                    <option :value="num" v-for="num in 10" :key="num">選購 {{num}} {{product.unit}}</option>
+                                </select>
+                                <button class="btn btn-primary u-pointer" @click="addtoCart(product.id,product.num)">
+                                    <i class="fas fa-plus-circle"></i>
+                                    加入購物車
+                                </button>
+                    </div> -->
+                </tr>
+            </table>
+            <p ><h1 class="word">詳細圖片</h1></p>
+            <img src="picture/bag1/picture3.JPG" alt="" class="otherpic">
+            <img src="picture/bag1/picture4.JPG" alt="" class="otherpic">
+            <img src="picture/bag1/picture5.JPG" alt="" class="otherpic">
+            <img src="picture/bag1/picture6.JPG" alt="" class="otherpic">
+            <img src="picture/bag1/picture7.JPG" alt="" class="otherpic">
+            <img src="picture/bag1/picture8.JPG" alt="" class="otherpic">
+            <img src="picture/bag1/picture9.JPG" alt="" class="otherpic">
+        </div>
+    </main>
+</body>
+<footer class="footer">
+    <div class="Storename">  Bag. Back. Best.  </div>
+    <div class="Subtitle"> # The best choice for your OOTD </div>
+    <img class="footicon" src="picture/icon.png"></img>
+</footer>
+</html>

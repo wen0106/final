@@ -1,0 +1,52 @@
+table {
+    padding: 50px;
+    border-spacing: 50px 0px;
+}
+
+tr {
+    border-style: double;
+}
+
+.photo {
+    width: 31.333;
+    margin: 0 1%;
+    padding-left: 30px;
+}
+
+.photo-source {
+    width: 100%;
+}
+
+.photo-info {
+    width: 25%;
+    height: 100px;
+    text-align: left;
+}
+
+.img-photo {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.a-detail {
+    width: 80%;
+    height: auto;
+    display: block;
+    text-decoration: none;
+    color: #0066ff;
+    font-weight: bold;
+    background-color: snow;
+}
+
+.a-back {
+    position: relative;
+    float: right;
+    text-decoration: none;
+    color: #000000;
+}
+
+.nonbackground:hover {
+    background-color: snow;
+}

@@ -1,0 +1,124 @@
+body {
+    color: rgb(61, 60, 60); 
+    background-color: snow;
+    width: 100%;
+    max-width: 100%;
+    margin: 1px 1px;
+}
+
+header {
+    display: block;
+}
+
+footer {
+    display: block;
+}
+
+main {
+    display: block;
+}
+
+nav {
+    display: block;
+    width: 96%;
+    margin: 0 auto;
+    height: 50px;
+}
+
+nav > ul {
+    padding: 0px;
+}
+
+nav > ul > li {
+    width: 60px;
+    margin: 0px 1px;
+    padding: 10px;
+    list-style: none;
+}
+
+.icon {
+    width: 35%;
+    height: auto;
+}
+
+.left {
+    position: relative;
+    float: left;
+}
+
+.right {
+    position: relative;
+    float: right;
+}
+
+#title1 {
+    margin: 10px;
+}
+
+#title1 > a:hover {
+    background-color: snow;
+}
+
+#title2 {
+    text-align: left;
+    padding-left: 30px;
+    margin-top: 50px;
+}
+
+.a-detail {
+    width: auto;
+    height: auto;
+    display: block;
+    text-decoration: none;
+    color: #0066ff;
+    font-weight: bold;
+    background-color: snow;
+}
+
+.bar-detail {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+}
+
+a {
+    width: auto;
+    text-decoration: none;
+    background-color: snow;
+    color: black;
+    border-radius: 5px;
+}
+
+a:hover {
+    width: 100%;
+    background-color: lightgray;
+    transition: backgroung-color 3s 0s;
+}
+
+.nonlink:hover {
+    background-color: snow;
+}
+
+footer{
+    color:  rgb(61, 60, 60);
+    background-color: rgb(255, 244, 231);
+    text-align: center;
+    width: 100%;
+}
+
+.Storename{
+    font-size: 28px;
+    margin-top: 40px;
+    padding-top: 30px;
+}
+
+.Subtitle{
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.footicon{
+    width: 20%;
+    padding-bottom: 20px;
+}
